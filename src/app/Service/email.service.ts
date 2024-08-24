@@ -11,6 +11,6 @@ export class EmailService {
   constructor(private http: HttpClient) {}
 
   sendEmail(data: any) {
-    return this.http.post(`${this.baseurl}/sendmail`,data);
+    return this.http.post(`${this.baseurl}`,data);
   }
 }
